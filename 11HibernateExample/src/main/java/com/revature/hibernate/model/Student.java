@@ -5,10 +5,16 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
 
 @Entity
 //@Table(name="Student_Table")
+@NamedQueries({
+	@NamedQuery(name="getAllStudent",query="FROM Student s"),
+	@NamedQuery(name="getStudentById",query="From Student s where id=:s_id")
+})
 public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)

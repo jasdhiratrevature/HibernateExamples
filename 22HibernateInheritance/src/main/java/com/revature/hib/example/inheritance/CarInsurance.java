@@ -8,9 +8,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="CAR_INSURANCE")
-@DiscriminatorValue("CAR")
-@PrimaryKeyJoinColumn(name="INSURANCE_ID")
-
+//@DiscriminatorValue("CAR")
 public class CarInsurance extends  Insurance
 {
 	@Column(name="CarNo")

@@ -12,11 +12,8 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="INSURANCE")
-
-//@Inheritance(strategy=InheritanceType.SINGLE_TABLE) 
-
+//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 //@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-
 @Inheritance(strategy = InheritanceType.JOINED)
 public class Insurance {
 	 @Id

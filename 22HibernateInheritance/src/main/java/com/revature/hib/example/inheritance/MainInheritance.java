@@ -5,10 +5,6 @@ import org.hibernate.Transaction;
 
 import com.revature.hib.utils.HibernateUtils;
 
-
-
-
-
 public class MainInheritance {
 public static void main(String[] args) {
 	Transaction transaction = null;

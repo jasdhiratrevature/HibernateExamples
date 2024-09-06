@@ -18,12 +18,12 @@ public static void main(String[] args) {
 	CriteriaQuery<Item> cr = cb.createQuery(Item.class);
 	Root<Item> root = cr.from(Item.class);
 	//get all the items.
-	//cr.select(root);
+	cr.select(root);
 	
 	//To get items having a price of more than 10:
 	//cr.select(root).where(cb.gt(root.get("itemPrice"), 12));
 	
-	cr.select(root).where(cb.like(root.get("itemName"), "%tem%"));
+	//cr.select(root).where(cb.like(root.get("itemName"), "%tem%"));
 
 	
 		//Records having itemPrice in between 100 and 200:
